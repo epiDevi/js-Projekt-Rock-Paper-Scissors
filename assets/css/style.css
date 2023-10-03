@@ -1,0 +1,223 @@
+@font-face {
+    font-family: primary-Font;
+    src: url("../font/GameOnlineDemoRegular.ttf");
+}
+@font-face {
+    font-family: secondary-Font;
+    src: url("../font/SPORTVIPER.ttf");
+}
+:root{
+    --dark-blue: rgb(1, 52, 86);
+    --light-blue: rgb(118, 204, 250);
+    --red:rgb(173, 2, 2);
+    --black: rgb(44, 44, 46);
+    --bg-color:rgb(247, 247, 219);
+    --yellow:#c4c701;
+    --orange : rgb(231, 116, 2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    font-family: primary-Font;
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    text-shadow: 2px 2px var(--yellow);
+}
+h3{
+  font-family: secondary-Font;
+  font-size: 2.5rem;
+  color: var(--dark-blue);
+  text-shadow: 2px 2px var(--yellow);
+}
+
+/* Positions */
+.m-t-30{
+    margin-top: 30px;
+}
+.m-t-10{
+    margin-top: 10px;
+}
+
+/* flex */
+.flex-space{
+    display: flex;
+    justify-content: space-evenly;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    font-size: 62.5%;
+}
+
+.container{
+    width: 80vw;
+    background: url("../img/bg-holz.jpg") no-repeat center ;
+    background-size: cover;
+    align-items: center; 
+    padding-bottom: 15px;
+    
+}
+.header , main ,footer{
+    width: 50%;
+    border: 3px dashed var(--black);
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px 0 15px 0;
+}
+.roundsSeloctor{
+    margin: 0 auto;
+    /* display: none; */
+}
+
+label{
+    font-family: secondary-Font;
+    font-size: 2rem;
+    color: var(--black);
+}
+h2 span{
+    font-family:secondary-Font ;
+}
+
+/*# sourceMappingURL=style.css.map */
+.cntr {
+  margin: auto;
+}
+
+.btn-radio {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.btn-radio:not(:first-child) {
+  margin-left: 20px;
+}
+@media screen and (max-width: 480px) {
+  .btn-radio {
+    display: block;
+    float: none;
+  }
+  .btn-radio:not(:first-child) {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+.btn-radio svg {
+  fill: none;
+  vertical-align: middle;
+}
+.btn-radio svg circle {
+  stroke-width: 2;
+  stroke: #C8CCD4;
+}
+.btn-radio svg path {
+  stroke: rgb(1, 52, 86);
+}
+.btn-radio svg path.inner {
+  stroke-width: 6;
+  stroke-dasharray: 19;
+  stroke-dashoffset: 19;
+}
+.btn-radio svg path.outer {
+  stroke-width: 2;
+  stroke-dasharray: 57;
+  stroke-dashoffset: 57;
+}
+.btn-radio input {
+  display: none;
+}
+.btn-radio input:checked + svg path {
+  transition: all 0.4s ease;
+}
+.btn-radio input:checked + svg path.inner {
+  stroke-dashoffset: 38;
+  transition-delay: 0.3s;
+}
+.btn-radio input:checked + svg path.outer {
+  stroke-dashoffset: 0;
+}
+.btn-radio span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.section-counter{
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
+
+/* main */
+.hand div{
+  border: 5px solid var(--yellow);
+  border-radius: 15px;
+  width: 90px;
+  background: rgb(1,52,86);
+  background: linear-gradient(0deg, rgba(1,52,86,1) 0%, rgba(1,84,139,1) 51%, rgba(0,166,255,1) 100%);
+  box-shadow: rgb(1,52,86) 0px 3px 8px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.hand div:hover{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background: rgb(84,14,14);
+  background: linear-gradient(0deg, rgba(84,14,14,1) 0%, rgba(161,39,39,1) 51%, rgba(255,108,108,1) 100%);
+  border: 5px solid var(--orange);
+}
+.hand div p{
+  font-size: 4rem;
+}
+/* footer */
+footer{
+  width: auto;
+  padding: 15px;
+}
+.result{
+  
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px 2px 1px var(--black), 
+  4px 0px 2px 1px var(--black), 4px -4px 2px 1px gray;
+
+}
+.result .grid{
+  display: grid;
+  grid-template-columns: repeat(6 , auto);
+  
+}
+.result .grid div{
+  width: 45px;
+  height: 45px;
+  border-bottom: 1px solid var(--black);
+  border-right: 1px solid var(--black);
+  padding: 2px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.result .grid div:nth-of-type(1){
+  width: 80px;
+}
+.result .grid div p{
+  width: 100px;
+  font-family: primary-Font;
+    font-size: 1.9rem;
+}
+
+.result-symbole{
+  font-family: primary-Font;
+  font-size: 1.7rem;
+}
+

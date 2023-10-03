@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/scss/style.scss">
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/4C47F4B0-D592-4BDB-84DC-813345353250.jpeg">
+</head>
+<body>
+    <div class="wrap">
+        <section class="container column">
+            <header class="header m-t-30">
+                <section class="rounds column ">
+                    <h2 >How many rounds <span>?</span></h2>
+                    <!-- <article class="roundsSeloctor column">
+                        <div class="flex-space">
+                            <div>
+                                <input type="radio" id="" name="rounds_seloctor" value="5" checked>
+                                <label for="html">5</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="" name="rounds_seloctor" value="10">
+                            <label for="css">10</label>
+                            </div>
+                        </div>
+                        <div class="flex-space m-t-10">
+                            <div>
+                                <input type="radio" id="" name="rounds_seloctor" value="15">
+                                <label for="javascript">15</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="" name="rounds_seloctor" value="20">
+                                <label for="javascript">20</label>
+                            </div>
+                            
+                        </div>
+                    </article> -->
+                    <article class="roundsSeloctor m-t-10">
+                        <div class="cntr">
+                            <label for="rdo-1" class="btn-radio">
+                                <input type="radio" id="rdo-1" name="radio-grp" value="5" checked >
+                                <svg width="20px" height="20px" viewBox="0 0 20 20">
+                                    <circle cx="10" cy="10" r="9"></circle>
+                                    <path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+                                    <path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+                                </svg>
+                                <span>5</span>
+                            </label>
+                            <label for="rdo-2" class="btn-radio">
+                                <input type="radio" id="rdo-2" name="radio-grp" value="10">
+                                <svg width="20px" height="20px" viewBox="0 0 20 20">
+                                    <circle cx="10" cy="10" r="9"></circle>
+                                    <path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+                                    <path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+                                </svg>
+                                <span>10</span>
+                            </label>
+                            <label for="rdo-3" class="btn-radio">
+                                <input type="radio" id="rdo-3" name="radio-grp" value="15">
+                                <svg width="20px" height="20px" viewBox="0 0 20 20">
+                                    <circle cx="10" cy="10" r="9"></circle>
+                                    <path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+                                    <path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+                                </svg>
+                                <span>15</span>
+                            </label>
+                            <label for="rdo-4" class="btn-radio">
+                                <input type="radio" id="rdo-4" name="radio-grp" value="20">
+                                <svg width="20px" height="20px" viewBox="0 0 20 20">
+                                    <circle cx="10" cy="10" r="9"></circle>
+                                    <path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+                                    <path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+                                </svg>
+                                <span>20</span>
+                            </label>
+                        </div>
+                    </article>
+                    <article class="section-counter">
+                        <h3 class="count-round"></h3>
+                    </article>
+                </section>
+            </header>
+            <main class="m-t-30">
+                <section class="hand flex-space">
+                    <div class="stone">
+                        <p>👊</p>
+                    </div>
+                    <div class="paper" >
+                        <p>🤚</p>
+                    </div>
+                    <div class="scissor">
+                        <p>✌️</p>
+                    </div>
+                    
+                </section>
+            </main>
+            <footer class="m-t-30">
+                <section class=" result column">
+                    <article class="grid">
+                        <div>
+                            <p>Sie</p>
+                        </div>
+                        <div class="box1"></div>
+                        <div class="box2"></div>
+                        <div class="box3"></div>
+                        <div class="box4"></div>
+                        <div class="box5"></div>
+                    </article>
+                    <article class="grid">
+                        <div>
+                            <p>Robot</p>
+                        </div>
+                        <div class="box1"></div>
+                        <div class="box2"></div>
+                        <div class="box3"></div>
+                        <div class="box4"></div>
+                        <div class="box5"></div>
+                        
+                    </article>
+
+                </section>
+
+            </footer>
+            
+        </section>
+    </div>
+    <script src="./assets/js/main.js" ></script>
+</body>
+</html>
